@@ -4,6 +4,7 @@ import Image from 'next/image'
 import {motion} from "framer-motion"
 import LeftSide from '@/components/LeftSide'
 import RightSide from '@/components/RightSide'
+import Hero from '@/components/Hero'
 
 export default function Home() {
   return (
@@ -18,6 +19,10 @@ export default function Home() {
           >
             <LeftSide/>
           </motion.div>
+
+          <div className="h-[88vh] mx-auto p-4">
+           <Hero/>
+          </div>
 
           <motion.div
             initial={{ opacity: 0 }}
