@@ -1,8 +1,10 @@
+"use client"
 import { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import Ed_School from "../Education/Ed_School";
 import Ed_College from "../Education/Ed_College";
 import Ed_University from "../Education/Ed_University";
+import {motion} from "framer-motion"
 
 
 const Experience = () => {
@@ -33,11 +35,14 @@ const Experience = () => {
   };
 
   return (
-    <section
+    <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 , y:"-10%"}}
+        transition={{ duration:0.5 , delay: .5 }}
       id="experience"
       className="max-w-containerxs mx-auto py-10 lgl:py-24 px-4"
     >
-      <SectionTitle title="Where I have Worked" titleNo="02" />
+      <SectionTitle  title="My Educational Background" titleNo="02" />
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
         <ul className="md:w-32 flex flex-col">
           <li
@@ -75,7 +80,7 @@ const Experience = () => {
         {College && <Ed_College />}
         {University && <Ed_University />}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

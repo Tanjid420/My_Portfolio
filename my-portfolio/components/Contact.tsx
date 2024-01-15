@@ -1,18 +1,22 @@
 import Link from "next/link";
+import {motion} from "framer-motion"
 
 const Contact = () => {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 , y:"-10%"}}
+      transition={{ duration:0.5 , delay: .5 }}
       id="contact"
       className="max-w-contentContainer mx-auto py-10 xl:py-32 flex flex-col gap-4 items-center justify-center"
     >
       <p className="font-titleFont text-lg text-textGreen font-semibold flex items-center tracking-wide">
-        04. What’s Next?
+        What’s Next?
       </p>
       <h2 className="font-titleFont text-5xl font-semibold">Get In Touch</h2>
       <p className="max-w-[600px] text-center text-textDark">
-        Although I’m not currently looking for any new opportunities, my inbox
-        is always open. Whether you have a question or just want to say hi, I’ll
+        I’m currently looking for any software engineering internships.
+        Whether you have a question, an offer to make or just want to say hi, I’ll
         try my best to get back to you!
       </p>
 
@@ -21,7 +25,7 @@ const Contact = () => {
           Say Hello
         </button>
       </a>
-    </section>
+    </motion.section>
   );
 };
 

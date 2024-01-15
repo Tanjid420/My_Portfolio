@@ -1,6 +1,6 @@
 "use client"
 import { useRef } from "react";
-// import { logo } from "@/public/assets";
+import {portfolioLogo} from "../public/index"
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -50,7 +50,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.1 }}
           >
-            {/* <Image className="w-14" src={logo} alt="logo" /> */}
+            <Image className="w-20" src={portfolioLogo} alt="logo" />
           </motion.div>
         </Link>
         {/* ============ Logo End here ============== */}
@@ -93,7 +93,7 @@ const Navbar = () => {
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1, delay: 0.2 }}
+                transition={{ duration: 0.1, delay: 0.15 }}
               >
                 <span className="text-textGreen"></span>
                 Experience
@@ -107,7 +107,7 @@ const Navbar = () => {
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1, delay: 0.3 }}
+                transition={{ duration: 0.1, delay: 0.2 }}
               >
                 <span className="text-textGreen"></span>
                 Project
@@ -121,7 +121,7 @@ const Navbar = () => {
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1, delay: 0.4 }}
+                transition={{ duration: 0.1, delay: 0.25 }}
               >
                 <span className="text-textGreen"></span>
                 Contact
@@ -132,7 +132,7 @@ const Navbar = () => {
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
+              transition={{ delay: 0.3 }}
               className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
             >
               Resume
@@ -188,7 +188,7 @@ const Navbar = () => {
                     <motion.li
                       initial={{ x: 20, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2, delay: 0.2, ease: "easeIn" }}
+                      transition={{ duration: 0.2, delay: 0.15, ease: "easeIn" }}
                     >
                       <span className="text-textGreen"></span>
                       About
@@ -202,7 +202,7 @@ const Navbar = () => {
                     <motion.li
                       initial={{ x: 20, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2, delay: 0.3, ease: "easeIn" }}
+                      transition={{ duration: 0.2, delay: 0.2, ease: "easeIn" }}
                     >
                       <span className="text-textGreen"></span>
                       Education
@@ -216,7 +216,7 @@ const Navbar = () => {
                     <motion.li
                       initial={{ x: 20, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2, delay: 0.4, ease: "easeIn" }}
+                      transition={{ duration: 0.2, delay: 0.25, ease: "easeIn" }}
                     >
                       <span className="text-textGreen"></span>
                       Project
@@ -230,7 +230,7 @@ const Navbar = () => {
                     <motion.li
                       initial={{ x: 20, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2, delay: 0.5, ease: "easeIn" }}
+                      transition={{ duration: 0.2, delay: 0.3, ease: "easeIn" }}
                     >
                       <span className="text-textGreen"></span>
                       Contact
@@ -241,7 +241,7 @@ const Navbar = () => {
                   <motion.button
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.6, ease: "easeIn" }}
+                    transition={{ delay: 0.35, ease: "easeIn" }}
                     className="w-32 h-10 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
                   >
                     Resume

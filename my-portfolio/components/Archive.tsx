@@ -7,7 +7,11 @@ const Archive = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="max-w-contentContainer mx-auto px-4 py-24">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 , y:"-10%"}}
+      transition={{ duration:0.5 , delay: .5 }} 
+      className="max-w-contentContainer mx-auto px-4 py-24">
       <div className="w-full flex flex-col items-center">
         <h2 className="text-3xl font-titleFont font-semibold">
           Other Noteworthy Projects
@@ -18,62 +22,38 @@ const Archive = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
         <ArchiveCard
-          title="Educare Engligh Learning Academy"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://www.educareenglishlearningacademy.com/"
+          title="Land Registration System
+          "
+          des=" This is a Blockchain based land registration suystem. Anyone can buy or sell their
+           lands online. All the transactions are done via etherium which is a digital currency.
+           It's a decentralized network and the informations are immutable."
+          listItem={["Reactjs", "Tailwind CSS", "Solidity", "Metamask", "Ganache"]}
+          link="https://github.com/Rafiqul-Ala-Mahid/Land-Registration-System"
         />
         <ArchiveCard
-          title="Cyber Security Blog with live comments section"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://www.noormohmmad.com/"
+          title="Cardiovascular Disease Prediction"
+          des="It's a machine learning project to predict the cardiovascular disease in a human being.
+          It was actually done by me along with my partners. It was an academic project."
+          listItem={["HTML","CSS", "Python", "Flusk"]}
+          link="https://github.com/ameyadebnath/Cardiovascular_disease_prediction"
         />
         <ArchiveCard
-          title="ReactBD web development company"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://reactbd.com/"
-        />
-        <ArchiveCard
-          title="Amazon Clone with login, cart-option and payment intrigation."
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://amazonclone.reactbd.com/"
-        />
-        <ArchiveCard
-          title="JSON data (example data api for test projects)"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Nextjs", "Tailwind CSS", "next-router"]}
-          link="https://jsondata.reactbd.com/"
-        />
-        <ArchiveCard
-          title="Dynamic Responsive Portfolio"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://portfolioone.reactbd.com/"
+          title="Bangla_Fruits_Classification"
+          des="It was also a machine learning project to classify fruits using a fruit classification model.
+          I have also done this project with my partner as it was an academic project. Here we made our own
+          dataset, we used 29 kinds of fruits. The Dataset and model is public."
+          listItem={["Python","HTML","CSS"]}
+          link="https://github.com/DiptoSarker/Bangla_Fruits_Classification"
         />
 
-        {showMore && (
+        {/* {showMore && (
           <>
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.1 }}
             >
-              <ArchiveCard
-                title="OREBI e-commerce Shopping store"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-                link="https://orebishopping.reactbd.com/"
-              />
+              <ArchiveCard/>
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
@@ -197,9 +177,9 @@ const Archive = () => {
           >
             Show More
           </button>
-        )}
+        )} */}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

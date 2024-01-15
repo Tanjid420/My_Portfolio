@@ -1,20 +1,26 @@
 // import { amazonImg, cyberImg, noorShop } from "@/public/assets";
+"use client"
 import Image from "next/image";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { TbBrandGithub } from "react-icons/tb";
 import SectionTitle from "./SectionTitle";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import {motion} from "framer-motion"
 
 const Projects = () => {
   return (
-    <section id="project" className="max-w-container mx-auto lgl:px-20 py-24">
-      <SectionTitle title="Some Things I have Built" titleNo="03" />
+    <motion.section
+     initial={{ opacity: 0 }}
+     whileInView={{ opacity: 1 , y:"-10%"}}
+     transition={{ duration:0.5 , delay: .5 }}
+     id="project" className="max-w-container mx-auto lgl:px-20 py-24 ml-[3rem]">
+      <SectionTitle title="Projects" titleNo="03" />
       {/* ============ project One Start here ================ */}
       <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
-        <div className="flex flex-col xl:flex-row gap-6">
+        <div className="flex flex-col xl:flex-row ml-[3rem] gap-6">
           <a
             className="w-full xl:w-1/2 h-auto relative group"
-            href="https://nextamazon.reactbd.com/"
+            href="https://github.com/Tanjid420/Dictionary_Traversal"
             target="_blank"
           >
             <div>
@@ -31,25 +37,26 @@ const Projects = () => {
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
-              <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
+              <h3 className="text-2xl font-bold">Dictionary_Traversal</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
-              An Amazon clone website for visualizing personalized Amazon
-              website. View your products, Add your account with{" "}
-              <span className="text-textGreen">O-auth</span> and then make the
-              purchage using <span className="text-textGreen">stripe</span>.
+            A platform where using a page's url one can find the words and their meaning 
+            that you might not know and many more fun things.{" "}
+              <span className="text-textGreen">Hovering 
+              </span> those highlighted words it will show the 
+              <span className="text-textGreen"> meaning of those words</span>, with <span className="text-textGreen">synonyms</span> and if possilbe
+               it will use pictures for
+               better understanding and also use reference of different sites for better learning those words.
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-              <li>Nextjs</li>
-              <li>Typescript</li>
-              <li>Next-auth</li>
-              <li>Stripe</li>
-              <li>Vercel Deployment</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
             </ul>
             <div className="text-2xl flex gap-4">
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://github.com/noorjsdivs"
+                href="https://github.com/Tanjid420/Dictionary_Traversal"
                 target="_blank"
               >
                 <TbBrandGithub />
@@ -73,10 +80,10 @@ const Projects = () => {
         </div>
         {/* ============ project One End here ================== */}
         {/* ============ project Two Start here ================ */}
-        <div className="flex flex-col xl:flex-row-reverse gap-6">
+        <div className="flex flex-col xl:flex-row-reverse ml-[3rem] mr-[2.9rem] gap-6">
           <a
             className="w-full xl:w-1/2 h-auto relative group"
-            href="https://www.noormohmmad.com/"
+            href="https://github.com/Arnob2018331024/ActionFigureBank_NextJS_E-commerce_Project"
             target="_blank"
           >
             <div>
@@ -93,27 +100,25 @@ const Projects = () => {
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
-              <h3 className="text-2xl font-bold">Cyber Security Blog</h3>
+              <h3 className="text-2xl font-bold">ActionFigure Bank</h3>
             </div>
             <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md xl:-mr-16">
-              A full functional Cyber Security Blog where you can view the
-              latest post and{" "}
-              <span className="text-textGreen">comments on</span> it by passing
-              your ideas besides you can try to add your own{" "}
-              <span className="text-textGreen">post</span> on it by logging on
-              the portal.
+            This is an <span className="text-textGreen">E-commerce</span> website which sells action figures. The products are supplied by the 
+            supplier after its corresponding charges are transacted via the bank from the e-commerce
+            organisation. A user can buy any amount of these products from the e-commerce website
+            after making a successful transaction via the bank.{" "}
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
               <li>Nextjs</li>
-              <li>Typescript</li>
-              <li>Next-auth</li>
-              <li>Sanity</li>
-              <li>React Hook Form</li>
+              <li>Nodejs</li>
+              <li>MongoDB</li>
+              <li>Tailwind CSS</li>
+             
             </ul>
             <div className="text-2xl flex gap-4">
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://github.com/noorjsdivs"
+                href="https://github.com/Arnob2018331024/ActionFigureBank_NextJS_E-commerce_Project"
                 target="_blank"
               >
                 <TbBrandGithub />
@@ -137,10 +142,10 @@ const Projects = () => {
         </div>
         {/* ============ project Two End here ================== */}
         {/* ============ project Three Start here ============== */}
-        <div className="flex flex-col xl:flex-row gap-6">
+        <div className="flex flex-col xl:flex-row ml-[3rem] gap-6">
           <a
             className="w-full xl:w-1/2 h-auto relative group"
-            href="https://noorshop.netlify.app/"
+            href="https://github.com/Tanjid420/Hospital-Management-System"
             target="_blank"
           >
             <div>
@@ -157,25 +162,23 @@ const Projects = () => {
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
-              <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
+              <h3 className="text-2xl font-bold">Hospital-Management-System</h3>
             </div>
             <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md">
-              An Amazon clone website for visualizing personalized Amazon
-              website. View your products, Add your account with{" "}
-              <span className="text-textGreen">O-auth</span> and then make the
-              purchage using <span className="text-textGreen">stripe</span>.
+            Hospital Management System is an online management system that is used to manage the hospital. 
+            It can actually maintain any appointment between any patients and doctors.When which room or
+            OT will be used, billing system and many more.
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-              <li>Nextjs</li>
-              <li>Typescript</li>
-              <li>Next-auth</li>
-              <li>Stripe</li>
-              <li>Vercel Deployment</li>
+              <li>Reactjs</li>
+              <li>Nodejs</li>
+              <li>MySQL</li>
+              
             </ul>
             <div className="text-2xl flex gap-4">
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://github.com/noorjsdivs"
+                href="https://github.com/Tanjid420/Hospital-Management-System"
                 target="_blank"
               >
                 <TbBrandGithub />
@@ -199,7 +202,7 @@ const Projects = () => {
         </div>
         {/* ============ project Three End here ================== */}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
