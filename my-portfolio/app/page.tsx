@@ -5,6 +5,8 @@ import {motion} from "framer-motion"
 import LeftSide from '@/components/LeftSide'
 import RightSide from '@/components/RightSide'
 import Hero from '@/components/Hero'
+import About from '@/components/About'
+import EducationalBackground from "../components/EducationalBackground"
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
 
           <div className="h-[88vh] mx-auto p-4">
            <Hero/>
+           <About/>
+           <EducationalBackground />
           </div>
 
           <motion.div
