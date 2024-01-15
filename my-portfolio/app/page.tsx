@@ -7,6 +7,10 @@ import RightSide from '@/components/RightSide'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import EducationalBackground from "../components/EducationalBackground"
+import Projects from '@/components/Projects'
+import Archive from '@/components/Archive'
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -26,6 +30,10 @@ export default function Home() {
            <Hero/>
            <About/>
            <EducationalBackground />
+           <Projects />
+           <Archive />
+           <Contact />
+           <Footer />
           </div>
 
           <motion.div
