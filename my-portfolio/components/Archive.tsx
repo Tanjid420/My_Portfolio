@@ -27,7 +27,7 @@ const Archive = () => {
           des=" This is a Blockchain based land registration suystem. Anyone can buy or sell their
            lands online. All the transactions are done via etherium which is a digital currency.
            It's a decentralized network and the informations are immutable."
-          listItem={["Reactjs", "Tailwind CSS", "Solidity", "Metamask", "Ganache"]}
+          listItem={["Reactjs", "Tailwind CSS", "Solidity", "Metamask", "Ganache", "Nodejs"]}
           link="https://github.com/Rafiqul-Ala-Mahid/Land-Registration-System"
         />
         <ArchiveCard

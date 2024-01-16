@@ -6,6 +6,7 @@ import { TbBrandGithub } from "react-icons/tb";
 import SectionTitle from "./SectionTitle";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import {motion} from "framer-motion"
+import { dictionary,hospital,ecommerce } from "@/public";
 
 const Projects = () => {
   return (
@@ -23,12 +24,12 @@ const Projects = () => {
             href="https://github.com/Tanjid420/Dictionary_Traversal"
             target="_blank"
           >
-            <div>
-              {/* <Image
+            <div className="h-[360px] w-[550px] pt-[4rem]">
+              <Image
                 className="w-full h-full object-contain"
-                src={amazonImg}
-                alt="amazonImg"
-              /> */}
+                src={dictionary}
+                alt="dictionary"
+              />
               <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
           </a>
@@ -86,12 +87,12 @@ const Projects = () => {
             href="https://github.com/Arnob2018331024/ActionFigureBank_NextJS_E-commerce_Project"
             target="_blank"
           >
-            <div>
-              {/* <Image
+            <div className="h-[300px] w-[520px]">
+              <Image
                 className="w-full h-full object-contain"
-                src={cyberImg}
-                alt="cyberImg"
-              /> */}
+                src={ecommerce}
+                alt="ecommerce"
+              />
               <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
           </a>
@@ -148,12 +149,12 @@ const Projects = () => {
             href="https://github.com/Tanjid420/Hospital-Management-System"
             target="_blank"
           >
-            <div>
-              {/* <Image
+            <div className="h-[300px] w-[520px]">
+              <Image
                 className="w-full h-full object-contain"
-                src={noorShop}
-                alt="noorShop"
-              /> */}
+                src={hospital}
+                alt="hospital"
+              />
               <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
           </a>

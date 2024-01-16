@@ -10,7 +10,7 @@ const Hero = () => {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="text-lg font-titleFont tracking-wide text-textGreen"
+        className="text-lg font-titleFont tracking-wide text-textGreen ml-[.2%]"
       >
         Hi, my name is
       </motion.h3>
