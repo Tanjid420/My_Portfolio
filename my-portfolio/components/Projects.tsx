@@ -41,7 +41,7 @@ const Projects = () => {
               <h3 className="text-2xl font-bold">Dictionary_Traversal</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
-            A platform where using a pages url one can find the words and their meaning 
+            A platform where using a page's url one can find the words and their meaning 
             that you might not know and many more fun things.{" "}
               <span className="text-textGreen">Hovering 
               </span> those highlighted words it will show the 

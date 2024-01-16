@@ -31,7 +31,7 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        Hey there! I am a passionate frontend enthusiast with a knack for crafting engaging user experiences.
+        Hey there! I'm a passionate frontend enthusiast with a knack for crafting engaging user experiences.
         I am all about creating cool stuff for users and learning as I go. Super eager to turn ideas into 
         reality, lets make some web magic together!  {" "}
         <a href="https://www.noormohammad.live/" target="_blank">
