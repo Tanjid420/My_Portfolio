@@ -23,7 +23,7 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-          Hey there! 👋 {`I'm`} a passionate frontend developer who thrives on bringing digital visions to life.
+          Hey there! 👋 I am a passionate frontend developer who thrives on bringing digital visions to life.
           My playground is the frontend of websites, where I sculpt user interfaces with creativity and 
           precision. A rapid learner at heart, I dive headfirst into the latest technologies, always 
           hungry for new challenges.
@@ -37,8 +37,8 @@ const About = () => {
           </p>
           <p>
            Ready to embark on a journey of continuous growth, I eagerly embrace every
-           opportunity to enhance my skills. If {`you're`} looking for a frontend enthusiast with a knack 
-           for learning and an eye for detail, {`you've`} landed on the right page. {`Let's`} build the future, 
+           opportunity to enhance my skills. If you are looking for a frontend enthusiast with a knack 
+           for learning and an eye for detail, you have landed on the right page. Lets build the future, 
            one line of code at a time! 🚀
           </p>
           <p>Here are a few technologies I have been working with recently:</p>
